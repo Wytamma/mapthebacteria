@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "bucketSize": 100000,
+  "rowCount": 2465670,
+  "idPrefixes": {
+    "SAMD": 0,
+    "SAMN": 1,
+    "SAMEA": 2
+  },
+  "indexEntry": {
+    "format": "little-endian uint32 triples",
+    "fields": [
+      "numeric_id",
+      "payload_offset",
+      "payload_length"
+    ],
+    "bytes": 12
+  },
+  "payload": {
+    "format": "concatenated per-record gzip-compressed JSON",
+    "rangeUnit": "bytes"
+  },
+  "columns": [
+    "row_index",
+    "sample_accession",
+    "run_accession",
+    "assembly_accession",
+    "dataset",
+    "scientific_name",
+    "sylph_species",
+    "gtdb_taxonomy",
+    "hq_filter",
+    "asm_pipe_filter",
+    "aws_url",
+    "osf_tarball_url",
+    "total_length",
+    "number_of_sequences",
+    "N_count",
+    "N50",
+    "N70",
+    "N90",
+    "GC_Content",
+    "Genome_Size",
+    "Coding_Density",
+    "Completeness_General",
+    "Contamination",
+    "Completeness_Specific",
+    "Total_Coding_Sequences",
+    "mlst_scheme",
+    "mlst_st",
+    "mlst_status",
+    "mlst_score",
+    "mlst_alleles"
+  ],
+  "shards": {
+    "SAMEA": 410,
+    "SAMN": 472,
+    "SAMD": 9
+  }
+}
